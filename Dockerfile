@@ -9,5 +9,6 @@ RUN rpmdb --rebuilddb && \
     yum install -y which date urw-fonts nc tmux
 
 COPY ./date_setup.sh /
+COPY ./launch_infoBrowser.sh /
 
 ENTRYPOINT ["/date_setup.sh"]
